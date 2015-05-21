@@ -1,0 +1,5 @@
+duperemove (0.10~beta1-1) trusty; urgency=medium
+
+  * Initial release based on upstream tarball.
+
+ -- Nick Douma <n.douma@nekoconeko.nl>  Thu, 21 May 2015 12:28:43 +0200

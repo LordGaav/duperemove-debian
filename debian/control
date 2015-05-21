@@ -1,0 +1,18 @@
+Source: duperemove
+Maintainer: Nick Douma <n.douma@nekoconeko.nl>
+Section: admin
+Priority: optional
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), libglib2.0-dev, libsqlite3-dev
+
+Package: duperemove
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Tool for finding duplicated extents and submitting them for deduplication.
+ When given a list of files it will hash their contents on a block by block
+ basis and compare those hashes to each other, finding and categorizing
+ extents that match each other. When given the -d option, duperemove will
+ submit those extents for deduplication using the btrfs-extent-same ioctl.
+ .
+ Duperemove has two major modes of operation one of which is a
+ subset of the other.
