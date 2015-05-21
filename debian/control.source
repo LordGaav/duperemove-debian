@@ -1,0 +1,6 @@
+Source: duperemove
+Maintainer: Nick Douma <n.douma@nekoconeko.nl>
+Section: admin
+Priority: optional
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9), libglib2.0-dev, libsqlite3-dev
