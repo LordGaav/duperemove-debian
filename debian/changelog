@@ -1,3 +1,9 @@
+duperemove (0.10) UNRELEASED; urgency=medium
+
+  * Based on upstream tarball.
+
+ -- Nick Douma <n.douma@nekoconeko.nl>  Thu, 20 Jan 2017 13:20:00 +0100
+
 duperemove (0.10~beta1) UNRELEASED; urgency=medium
 
   * Initial release based on upstream tarball.

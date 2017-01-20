@@ -2,11 +2,12 @@
 Package: duperemove
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: Tool for finding duplicated extents and submitting them for deduplication.
- When given a list of files it will hash their contents on a block by block
- basis and compare those hashes to each other, finding and categorizing
- extents that match each other. When given the -d option, duperemove will
- submit those extents for deduplication using the btrfs-extent-same ioctl.
+Description: extent-based deduplicator for file systems
+ Duperemove is a tool for finding duplicated extents and submitting them for
+ deduplication.  When given a list of files it will hash their contents on a
+ block by block basis and compare those hashes to each other, finding and
+ categorizing extents that match each other.
  .
- Duperemove has two major modes of operation one of which is a
- subset of the other.
+ On BTRFS and, experimentally, XFS, it can then reflink such extents in a
+ race-free way.  Unlike hardlink-based solutions, affected files appear
+ independent in any way other than reduced disk space used.
